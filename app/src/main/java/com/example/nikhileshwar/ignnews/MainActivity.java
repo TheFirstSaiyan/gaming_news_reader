@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
         sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS articles (title VARCHAR,content VARCHAR)");
 
 
-        String html = "https://newsapi.org/v1/articles?source=ign&sortBy=latest&apiKey=98387069dc4d4686a4ef073c595cb4eb";
+        String html = "https://newsapi.org/v1/articles?source=ign&sortBy=latest&apiKey='your api key from NEWS API here'";
         DownloadTask task = new DownloadTask();
 
        refreshList();
